@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Mongo</title>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="/assets/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/client.js"></script>
+  </head>
+  <body>
+    <div ng-controller="SomeController">
+      Am I loading?
+
+      <div ng-repeat="things in dataArray">
+        <p>Name: {{ things.name }}</p>
+        <p>Realname: {{ things.realname }}</p>
+      </div>
+    </div>
+  </body>
+</html>
